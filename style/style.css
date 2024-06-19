@@ -1,0 +1,266 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #cccccc;
+}
+
+h1 {
+  margin: 0;
+}
+
+.navigation {
+  margin-inline: auto;
+  padding-inline: 30px;
+  position: sticky;
+  top: 0;
+  background-color: #ccc;
+  z-index: 1000;
+  width: 100%;
+}
+
+.stroke {
+  width: 100%;
+  height: 0.0625rem;
+  background-color: #000;
+  margin-top: 1.125rem;
+  max-width: 95%;
+}
+
+.section-hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, auto);
+  gap: 30px;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.section-hero--title {
+  font-size: 4.375rem;
+  margin: 0;
+  line-height: 1;
+  padding-inline: 2.5rem;
+  position: relative; /* 부모 요소는 relative로 설정 */
+}
+
+.hero_img {
+  margin-inline: auto;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0; /* 화면 상단에서 고정되도록 설정 */
+  z-index: 100; /* 다른 요소 위에 올라오도록 설정 (선택 사항) */
+}
+
+.hero_img img {
+  padding-top: 30px;
+  padding-right: 70px;
+  margin-bottom: 10px;
+  max-width: 100%;
+  justify-content: center;
+}
+
+.text {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 40px;
+  margin-inline: auto;
+}
+
+.intro {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.intro_1 {
+  font-size: 80px;
+  padding-left: 490px;
+  font-family: serif;
+  font-style: italic;
+  align-items: baseline;
+}
+
+.projectcontainer {
+  margin-inline: 0 auto;
+}
+
+.projectcontainer-1 {
+  margin-inline: 0 auto;
+  background-color: yellow;
+}
+
+.projectcontainer-2 {
+  margin-inline: 0 auto;
+  background-color: #ccc;
+}
+
+.me {
+  margin-top: 1.125rem;
+  text-align: left;
+  padding-left: 12.5rem;
+  padding-block: 4.375rem;
+  color: #fff;
+  background-color: black;
+  font-size: 1.875rem;
+}
+
+.project-work {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, auto);
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  padding-block: 1.25rem;
+  justify-content: center;
+}
+
+.project-work--1 {
+  color: #000;
+  font-size: 2rem;
+  text-align: left;
+  padding-block: 4.375rem;
+  justify-content: center;
+}
+
+.project-work--2 {
+  color: #000;
+  font-size: 2rem;
+  text-align: left;
+  padding-block: 4.375rem;
+  justify-content: center;
+}
+
+.project1 {
+  background-color: yellow;
+  margin-inline: auto;
+  max-width: 75rem;
+}
+
+.imgGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 10px;
+  max-width: 80%;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.ImgGridItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ImgGridItem img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.project2 {
+  background-color: #ccc;
+  margin-inline: auto;
+  max-width: 75rem;
+}
+
+.project3 {
+  background-color: #ffff00;
+  margin-inline: auto;
+  max-width: 75rem;
+}
+
+.project4 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, auto);
+  background-color: #ccc;
+  margin-inline: auto;
+  max-width: 75rem;
+}
+
+.workimage {
+  margin-inline: auto;
+  justify-content: center;
+}
+
+.workimage img {
+  max-width: 60%;
+  margin-inline: auto;
+  justify-content: center;
+}
+
+footer {
+  background-color: #000000;
+  color: #ecf0f1;
+  padding: 40px 0;
+  font-size: 16px;
+  text-align: center;
+}
+footer .footer-content {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+footer .footer-section {
+  flex: 1;
+  margin-right: 20px;
+  padding: 0 20px;
+}
+footer .footer-section h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ffff00;
+}
+footer .footer-section p {
+  line-height: 1.6;
+}
+footer .footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+footer .footer-section ul li {
+  margin-bottom: 8px;
+}
+footer .footer-section .footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #bdc3c7;
+}
+footer .footer-section .footer-bottom p {
+  margin: 5px 0;
+}
+
+.navigation-left div {
+  cursor: pointer;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding-inline: 1rem;
+  padding-block: 0.5rem 0.375rem;
+  border-radius: 999px;
+  border: solid 0.0625rem #000;
+  margin-top: 1.25rem;
+  font-size: 1.3rem;
+  transition: background-color 0.3s ease;
+}
+
+.navigation-left {
+  display: flex;
+  gap: 10px;
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
+
+.navigation-left div:hover {
+  background-color: #ffff00;
+  padding-inline: 1rem;
+  padding-block: 0.5rem 0.375rem;
+  border-radius: 999px;
+}
